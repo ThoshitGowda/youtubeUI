@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+
+* {
+  margin: 0;
+  font-family: Roboto;
+  background-color: #0f0f0f;
+  color: white;
+  font-size: 9px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  min-height: 15%;
+  max-width: 100%;
+  position: fixed;
+  top: 0%;
+  bottom: 88%;
+  right: 0%;
+  left: 0%;
+}
+
+#display {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  right: 0%;
+  left: 0%;
+  margin-bottom: 1%; 
+}
+
+.header #display span {
+  font-size: 30px;
+}
+
+#input {
+  display: flex;
+  width: 40%;
+  height: 100%;
+}
+
+#menu {
+  display: flex;
+  width: 15%;
+}
+
+#yt-icon {
+  max-width: 60%;
+  min-height: 100%;
+  margin-left: 2%;
+}
+
+#display #search-bar {
+  width: 90%;
+  height: 85%;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  color: white;
+  font-size: 14px;
+  border: solid #2a2a2a 1px;
+  padding: 0.5rem;
+}
+
+#display #search-button {
+  width: 10%;
+  height: 85%;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 0.5rem;
+  font-size: 14px;;
+  background: #2a2a2a;
+  border: #2a2a2a 1px;
+}
+
+#display #div-user {
+  display: flex;
+  margin-right: 1rem;
+}
+
+#display a {
+  margin-left: 1dvw;
+}
+
+#boxes {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 5dvw;
+  overflow-x: hidden;
+}
+
+#boxes:hover {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scrollbar-width: 0.5dvw;
+}
+
+#boxes div {
+  max-width: auto;
+  background-color: #272727;
+  padding: 0.5em;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: 0.5s;
+}
+
+#boxes div:hover {
+  background-color: #5a5959;
+}
+
+#boxes div:scope {
+  background-color: #fcfafa;
+  color: black;
+}
+
+main {
+  max-width: 100%;
+  display: flex;
+  position: fixed;
+  top: 15%;
+  bottom: 0%;
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 5%;
+  position: fixed;
+  top: 15%;
+  left: 0%;
+  right: 95%;
+}
+
+.sidebar-child {
+  height: 10vh;
+  width: 4vw;
+  color: aliceblue;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-child-shorts {
+  height: 10vh;
+  width: 4vw;
+  color: aliceblue;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-child a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+}
+
+#vid-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  position: relative;
+  left: 5%;
+}
+
+iframe {
+  width: 30dvw;
+  min-height: 32dvh;
+}
+
+i {
+  font-size: 25px;
+  max-width: 3dvw;
+  min-height: 5dvh;
+  position: absolute;
+  top: 1;
+  right: 1;
+}
+
+.vid {
+  margin: 10px;
+  width: 30dvw;
+  min-height: 32dvh;
+}
+
+p {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  font-weight: 500;
+}
+
+.vid a img {
+  width: 30dvw;
+  min-height: 32dvh;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+@media (max-width:500px) {
+ *{
+  margin: 0%;
+ }
+  .header {
+    display: flex;
+    flex-direction: column;
+    min-height: 20%;
+    max-width: 100%;
+    position: absolute;
+    top: 0%;
+    bottom: 80%;;
+  }
+
+  #display {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #boxes {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 5%;
+    overflow-x: hidden;
+  }
+
+  main {
+    max-width: 100%;
+    min-height: 80%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+  }
+
+  #vid-container {
+    width: 100%;
+    height: 90%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    top: 0%;
+    left: 5%;
+    right: 5%;
+    bottom: 10%;
+  }
+
+  .vid {
+    margin: 5%;
+    margin-right: 5%;
+    width: 100%;
+    min-height: 50%;
+  }
+
+  iframe {
+    width: 80%;
+    min-height: 85%;
+  }
+
+  #sidebar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 90%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    max-width: 100%;;
+  }
+}
